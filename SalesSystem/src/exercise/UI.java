@@ -35,7 +35,7 @@ public class UI {
     public void printReceipt(Sale sale) {
         System.out.println("*** Invoice ***");
         LocalDateTime time = sale.getTimeOfSale();
-        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd-HH-yyyy HH:mm");
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
         System.out.println("Date: " + time.format(fmt));
         ArrayList<SaleLineItem> itemLines = sale.getSalesList();
 
